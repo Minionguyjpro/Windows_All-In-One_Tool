@@ -28,12 +28,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run an one-line script
         run: |
-         'D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\.github\workflows\test.bat'
+         "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\.github\workflows\test.bat"
          echo Exiting...
          exit /b 0
         shell: cmd
-
-      - run: mkdir -p src
 
       - uses: actions/upload-artifact@v3
         with:
