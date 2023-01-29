@@ -30,8 +30,8 @@ jobs:
         run: |
          'D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\.github\workflows\test.bat'
          echo Exiting...
-         timeout /t 3 > nul
          exit /b 0
+        shell: cmd
 
       - run: mkdir -p src
 
