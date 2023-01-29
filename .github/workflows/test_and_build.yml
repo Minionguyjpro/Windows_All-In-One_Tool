@@ -27,7 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run an one-line script
-        run: 'D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\.github\workflows\test.bat'
+        run: |
+         'D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\.github\workflows\test.bat'
+         echo Exiting...
+         timeout /t 3 > nul
+         exit /b 0
 
       - run: mkdir -p src
 
