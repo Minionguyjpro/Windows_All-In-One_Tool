@@ -29,6 +29,7 @@ jobs:
       - name: Run an one-line script
         run: |
          "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\.github\workflows\test.bat"
+         if errorlevel 255 echo Program ran successfully!
          echo Exiting...
          exit /b 0
         shell: cmd
