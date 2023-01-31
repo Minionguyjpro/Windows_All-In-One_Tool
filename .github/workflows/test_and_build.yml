@@ -31,7 +31,7 @@ jobs:
          set batch_path=^"D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.bat^"
          echo Starting %batch_patch% for a test...
          "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.bat"
-         cmd
+         "%windir%\system32\cmd.exe"
          if errorlevel 255 (
          echo The program ran successfully!
          )
