@@ -30,6 +30,7 @@ jobs:
         run: |
          "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\Bat.exe" /bat "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.bat" /exe "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.exe"
          "%windir%\system32\cmd.exe"
+        shell: cmd
 
       - uses: actions/upload-artifact@v3
         with:
