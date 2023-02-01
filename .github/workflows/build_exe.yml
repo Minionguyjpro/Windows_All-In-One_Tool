@@ -25,18 +25,19 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Get version
-        run: echo "version=$(git describe --tags --abbrev=0)+1" >> $GITHUB_OUTPUT
-        id: project
+      - name: Set env
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}+1" >> $GITHUB_ENV
         
       - name: Tell current version
-        run: echo The current version is ${{ steps.project.outputs.version }}
+        run: |
+         echo $RELEASE_VERSION
+         echo ${{ env.RELEASE_VERSION }}
 
       # Converts the batch file into an executable program for Windows
       - name: Build BAT to EXE application
         run: |
          "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\Bat.exe" /bat "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.bat" /exe "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.exe"
-         "%windir%\system32\cmd.exe" /icon "" /uac-admin /productversion "${{ steps.project.outputs.version }}" /internalname "Windows All-In-One Tool"
+         "%windir%\system32\cmd.exe" /icon "" /uac-admin /productversion "${{ env.RELEASE_VERSION }}" /internalname "Windows All-In-One Tool"
         shell: cmd
 
       - uses: actions/upload-artifact@v3
