@@ -25,11 +25,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run an one-line script
+      - name: Get version
+        run: echo "version=$(git describe --tags --abbrev=0 # 0.1.0-dev)+1" >> $GITHUB_OUTPUT
+        id: project
+        
+      - name: Tell current version
+        run: echo The current version is ${{ steps.project.outputs.version }}
+
+      # Converts the batch file into an executable program for Windows
+      - name: Build BAT to EXE application
         run: |
          "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\Bat.exe" /bat "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.bat" /exe "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.exe"
-         "%windir%\system32\cmd.exe"
+         "%windir%\system32\cmd.exe" /icon "" /uac-admin /productversion "${{ steps.project.outputs.version }}" /internalname "Windows All-In-One Tool"
         shell: cmd
 
       - uses: actions/upload-artifact@v3
