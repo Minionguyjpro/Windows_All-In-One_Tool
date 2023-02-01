@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  test-and-build:
+  test-and-upload:
     # The type of runner that the job will run on
     runs-on: windows-latest
 
@@ -39,6 +39,7 @@ jobs:
          echo Exiting...
          timeout /t 3 > nul
          exit /b 0
+        shell: cmd
 
       - uses: actions/upload-artifact@v3
         with:
