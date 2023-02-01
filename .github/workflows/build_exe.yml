@@ -12,6 +12,9 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  # Sets environent variables for the complete workflow
+env:
+  REPO_PATH: 'D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
