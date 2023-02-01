@@ -27,11 +27,6 @@ jobs:
 
       - name: Set env
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}+1" >> $GITHUB_ENV
-        
-      - name: Tell current version
-        run: |
-         echo $RELEASE_VERSION
-         echo ${{ env.RELEASE_VERSION }}
 
       # Converts the batch file into an executable program for Windows
       - name: Build BAT to EXE application
