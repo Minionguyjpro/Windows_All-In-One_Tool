@@ -34,8 +34,7 @@ jobs:
       # Converts the batch file into an executable program for Windows
       - name: Build BAT to EXE application
         run: |
-         "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\Bat.exe" /bat "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.bat" /exe "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.exe"
-         "%windir%\system32\cmd.exe" /icon "" /uac-admin /productversion "${{ env.RELEASE_VERSION }}" /internalname "Windows All-In-One Tool"
+          "$REPO_PATH\Bat.exe" /bat "$REPO_PATH\src\Windows All-In-One Tool.bat" /exe "$REPO_PATH\src\Windows All-In-One Tool.exe" /icon "" /uac-admin /productversion "${{ env.RELEASE_VERSION }}" /internalname "Windows All-In-One Tool"
         shell: cmd
 
       - uses: actions/upload-artifact@v3
