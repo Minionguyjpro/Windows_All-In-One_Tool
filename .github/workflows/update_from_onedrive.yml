@@ -24,8 +24,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      
+      - uses: actions/checkout@v2
       - name: Get file from OneDrive
         run: |
           Invoke-WebRequest -Uri 'https://freakinsoftmania-my.sharepoint.com/personal/admin_freakinsoftmania_unaux_com/_layouts/15/download.aspx?UniqueId=e44c4bad%2D3a2a%2D4904%2Dbc4e%2D1ce5e04ae0c0' -OutFile 'D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows All-In-One Tool.bat'
