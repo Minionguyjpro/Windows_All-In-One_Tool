@@ -28,4 +28,4 @@ jobs:
       
       - name: Get file from OneDrive
         run: |
-          Invoke-WebRequest -Uri 'https://freakinsoftmania-my.sharepoint.com/personal/admin_freakinsoftmania_unaux_com/_layouts/15/download.aspx?UniqueId=e44c4bad%2D3a2a%2D4904%2Dbc4e%2D1ce5e04ae0c0' -OutFile '$env:REPO_PATH\src\Windows All-In-One Tool.bat'
+          Invoke-WebRequest -Uri 'https://freakinsoftmania-my.sharepoint.com/personal/admin_freakinsoftmania_unaux_com/_layouts/15/download.aspx?UniqueId=e44c4bad%2D3a2a%2D4904%2Dbc4e%2D1ce5e04ae0c0' -OutFile '$REPO_PATH\src\Windows All-In-One Tool.bat'
