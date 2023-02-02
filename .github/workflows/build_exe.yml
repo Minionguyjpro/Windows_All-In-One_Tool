@@ -44,7 +44,7 @@ jobs:
         with:
           certificate: '${{ secrets.CERTIFICATE }}'
           cert-password: '${{ secrets.PASSWORD }}'
-          cert-sha1: '${{ secrets.CERTHASH }}'
+          cert-sha1: ''
           cert-description: 'N/A'
           folder: 'src/'
           recursive: true
