@@ -32,8 +32,12 @@ if '%errorlevel%' NEQ '0' (
 :start
 set back_to_terminal=0
 set back_to_15=0
+for /f "delims=" %%i in ('time /t') do set time=%%i
+for /f "delims=" %%o in ('date /t') do set date=%%o
 cls
 echo Hello there, %username%!
+echo The current time is %time%
+echo And the current date is %date%
 echo:
 echo                          ^|                 Windows All-In-One Tool v1.1.0-stable                 ^|
 echo                          ^|                         Made by Minionguyjpro                         ^|
@@ -50,8 +54,8 @@ echo                          ^|[12] Boot into BIOS/UEFI (WinUEFI)[29] N/A      
 echo                          ^|[13] Show System Information      [30] N/A                             ^|
 echo                          ^|[14] Show Windows Directory       [31] N/A                             ^|
 echo                          ^|[15] Empty temporary folder       [32] N/A                             ^|
-echo                          ^|[16] N/A                          [33] N/A                             ^|
-echo                          ^|[17] N/A                          [34] N/A                             ^|
+echo                          ^|[16] Check Windows last boot time [33] N/A                             ^|
+echo                          ^|[17] Show Wi-Fi Password          [34] N/A                             ^|
 echo                          ^|[18] N/A                          [35] N/A                             ^|
 echo                          ^|[19] N/A                          [36] N/A                             ^|
 echo                          ^|[20] N/A                          [37] N/A                             ^|
@@ -170,10 +174,10 @@ goto start
 :6
 cls
 set /p ping_tool=Enter a website to ping or use arguments and subcommands for the 'ping' command "Do not include 'ping' in command": 
-echo.%ping_tool%|findstr /C:"ping" >nul 2>&1
+echo.%ping_tool%|findstr /C:"ping " >nul 2>&1
 if not errorlevel 1 goto error_ping_detected
 if %ping_tool%==exit goto start
-ping %ping_tool%
+"PING.exe" %ping_tool%
 set /p another_ping=Do you want to use the ping tool again? [Y/N] 
 if %another_ping%==y goto 6
 if %another_ping%==Y goto 6
@@ -402,7 +406,18 @@ if %errorlevel%==0 echo The temporary directory has been unforce cleared!
 pause >nul
 goto start
 :16
+cls
+WMIC.exe os get lastbootuptime
+<nul set /p "=Done reading/checking? Press a key to proceed..."
+pause >nul
+goto start
 :17
+cls
+echo WARNING! Because you want to view the password of the Wi-Fi network, you need to enter your account's password.
+for /f "delims=" %%2 in ('hostname') do set pcname=%%2
+net use \\server\share * /user:domain\username
+pause
+goto start
 :18
 :19
 :20
