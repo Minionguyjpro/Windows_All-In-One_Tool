@@ -12,3 +12,6 @@ jobs:
   
   - name: Download a file
     uses: valitydev/action-download-file@v1.0.6
+    with:
+     url: ${{ secrets.onedrive_url }}
+     target-path: src/
