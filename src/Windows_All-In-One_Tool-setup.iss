@@ -40,11 +40,11 @@ Source: "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\{#MyAppExeName
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
-Root: HKA; Subkey: "Software\Classes\Applications\{#MyAppExeName}\SupportedTypes"; ValueType: string; ValueName: ".exe"; ValueData: ""
-Root: HKA; Subkey: "Software\Classes\Applications\{#MyAppExeName}"; ValueType: string; ValueName: "FriendlyAppName"; ValueData: "Windows All-In-One Tool {#MyAppVersion}"
-Root: HKA; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: ""; ValueData: "{autopf}\Windows All-In-One Tool\Windows All-In-One Tool.exe"
-Root: HKA; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: "InstallDir"; ValueData: "{autopf}\Windows All-In-One Tool"
-Root: HKA; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: "Version"; ValueData: "{#MyAppVersion}"
+Root: HKLM; Subkey: "Software\Classes\Applications\{#MyAppExeName}\SupportedTypes"; ValueType: string; ValueName: ".exe"; ValueData: ""
+Root: HKLM; Subkey: "Software\Classes\Applications\{#MyAppExeName}"; ValueType: string; ValueName: "FriendlyAppName"; ValueData: "Windows All-In-One Tool {#MyAppVersion}"
+Root: HKLM; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: ""; ValueData: "{autopf}\Windows All-In-One Tool\Windows All-In-One Tool.exe"
+Root: HKLM; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: "InstallDir"; ValueData: "{autopf}\Windows All-In-One Tool"
+Root: HKLM; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: "Version"; ValueData: "{#MyAppVersion}"
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
