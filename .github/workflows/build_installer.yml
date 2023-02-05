@@ -1,0 +1,18 @@
+name: Build installer
+on:
+  workflow_run:
+    workflows: [Build EXE application]
+    types:
+      - completed
+jobs:
+ build:
+  runs-on: windows-latest
+  steps:
+     - uses: actions/download-artifact@v3
+       with:
+         name: "Windows All-In-One Tool"
+         path: src/
+     - name: Build the EXE installer
+       run: |
+         "%programfiles(x86)%\Inno Setup 6\iscc.exe" "%GITHUB_WORKSPACE%\src\Windows_All-In-One_Tool.iss"
+       shell: cmd
