@@ -18,7 +18,7 @@ AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 DefaultDirName={autopf}\{#MyAppName}
-OutputDir="{%GITHUB_WORKSPACE}\build\"
+OutputDir=D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\build\
 ChangesAssociations=yes
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
@@ -36,7 +36,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags:
 
 [Files]
-Source: "{%GITHUB_WORKSPACE}\src\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
