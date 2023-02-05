@@ -42,6 +42,10 @@ Source: "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\{#MyAppExeName
 [Registry]
 Root: HKA; Subkey: "Software\Classes\Applications\{#MyAppExeName}\SupportedTypes"; ValueType: string; ValueName: ".exe"; ValueData: ""
 Root: HKA; Subkey: "Software\Classes\Applications\{#MyAppExeName}"; ValueType: string; ValueName: "FriendlyAppName"; ValueData: "Windows All-In-One Tool {#MyAppVersion}"
+Root: HKA; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: ""; ValueData: "{autopf}\Windows All-In-One Tool\Windows All-In-One Tool.exe"
+Root: HKA; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: "InstallDir"; ValueData: "{autopf}\Windows All-In-One Tool"
+Root: HKA; Subkey: "Software\Minionguyjpro\{#MyAppName}\"; ValueType: string; ValueName: "Version"; ValueData: "{#MyAppVersion}"
+
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
