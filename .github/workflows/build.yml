@@ -65,10 +65,10 @@ jobs:
           path: src/
       - name: Build the EXE installer
         run: |
-          "%programfiles(x86)%\Inno Setup 6\iscc.exe" "${{ github.WORKSPACE }}\src\Windows_All-In-One_Tool-setup.iss"
+          "%programfiles(x86)%\Inno Setup 6\iscc.exe" "D:\a\Windows_All-In-One_Tool\Windows_All-In-One_Tool\src\Windows_All-In-One_Tool-setup.iss"
         shell: cmd
 
       - uses: actions/upload-artifact@v3
         with:
          name: Windows All-In-One Tool
-         path: "src/Windows_All-In-One_Tool-setup.exe"
+         path: "build/Windows_All-In-One_Tool-setup.exe"
