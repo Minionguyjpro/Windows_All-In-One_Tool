@@ -271,7 +271,7 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#footer_home {
+#header_home {
   display: block;
   position: absolute;
   top:0;
@@ -284,7 +284,7 @@ Full-Width Styles
   border-bottom-right-radius: 2px;
 }
 
-#footer_features {
+#header_features {
   display: block;
   position: absolute;
   top:0;
