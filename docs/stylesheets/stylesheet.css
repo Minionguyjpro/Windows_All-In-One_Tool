@@ -271,7 +271,20 @@ Full-Width Styles
   margin: 0 auto;
 }
 
-#features_banner {
+#footer_home {
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  font-weight: 700;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#footer_features {
   display: block;
   position: absolute;
   top:0;
