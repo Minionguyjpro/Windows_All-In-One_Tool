@@ -526,7 +526,7 @@ Small Device Styles
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: white;
+  color: auto;
   font-size: 20px;
 }
 
@@ -535,7 +535,7 @@ Small Device Styles
   position: absolute;
   top: 10px;
   right: 15px;
-  color: white;
+  color: black;
   font-size: 35px;
   cursor: pointer;
 }
