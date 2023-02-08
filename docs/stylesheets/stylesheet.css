@@ -134,6 +134,8 @@ strong {
 }
 
 img {
+  width: 100%;
+  height: auto;
   position: relative;
   margin: 0 auto;
   max-width: 739px;
