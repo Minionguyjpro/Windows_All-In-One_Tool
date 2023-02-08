@@ -534,7 +534,7 @@ Small Device Styles
 .closebtn {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 20px;
   color: black;
   font-size: 35px;
   cursor: pointer;
