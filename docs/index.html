@@ -43,6 +43,35 @@ To download it, go to the <a href="./download/">Downloads</a> page.<br>
 To know more about all its features and options, go to the <a href="./features/">Features</a> page.
 </p>
         
+    <!-- The grid: four columns -->
+    <script src="./javascripts/main.js"></script>
+    <div class="row">
+      <div class="column">
+        <img src="https://forum.xda-developers.com/attachments/1674980565880-png.5822587/" alt="Nature" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="" alt="Snow" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="" alt="Mountains" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="" alt="Lights" onclick="myFunction(this);">
+      </div>
+    </div>
+    
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width:100%">
+    
+      <!-- Image text -->
+      <div id="imgtext"></div>
+    </div>
+    
 <p>If you want to clone this repository, you can do it using the following commands:</p>
 
 <pre><code>$ git clone https://github.com/Minionguyjpro/Windows_All-In-One_Tool
@@ -55,35 +84,6 @@ $ git push origin main
 
       </section>
     </div>
-
-    <!-- The grid: four columns -->
-<script src="./javascripts/main.js"></script>
-<div class="row">
-  <div class="column">
-    <img src="https://forum.xda-developers.com/attachments/1674980565880-png.5822587/" alt="Nature" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="" alt="Snow" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="" alt="Mountains" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="" alt="Lights" onclick="myFunction(this);">
-  </div>
-</div>
-
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
