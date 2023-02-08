@@ -303,7 +303,7 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  left: -20px;
+  left: -10px;
   z-index: 10;
   padding: 10px 0px 10px 0px;
   color: #fff;
@@ -316,7 +316,7 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  left: 30px;
+  left: 40px;
   z-index: 10;
   padding: 10px 0px 10px 0px;
   color: #fff;
@@ -329,7 +329,7 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  left: 97px;
+  left: 107px;
   z-index: 10;
   padding: 10px 0px 10px 0px;
   color: #fff;
