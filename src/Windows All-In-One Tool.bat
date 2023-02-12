@@ -1,17 +1,507 @@
+@echo off
+title Windows All-In-One Tool by Minionguyjpro
 
-<html>
-    <head>
-        <title>Microsoft OneDrive - Access files anywhere. Create docs with free Office Online.</title><meta name="title" content="Microsoft OneDrive - Access files anywhere. Create docs with free Office Online."/><meta name="description" content="Store photos and docs online. Access them from any PC, Mac or phone. Create and work together on Word, Excel or PowerPoint documents."/><meta property="og:title" content="Windows All-In-One Tool.bat"/><meta property="og:image" content="https&#58;//p.sfx.ms/icons/v2/Large/Batch.png"/><meta property="og:image:width" content="96"/><meta property="og:image:height" content="96"/><meta property="og:url" content="https&#58;//onedrive.live.com/redir&#63;resid&#61;254174B27514DE0A&#33;18324&#38;authkey&#61;&#33;AEi1KGdnDHvd_UU&#38;e&#61;OUJ8dM"/><meta property="og:description" content="BAT File"/><meta property="twitter:site" content="&#64;OneDrive"/><meta property="twitter:card" content="summary"/><meta property="twitter:image" content="https&#58;//p.sfx.ms/icons/v2/Large/Batch.png"/><meta property="twitter:image:width" content="96"/><meta property="twitter:image:height" content="96"/>
-        <noscript><meta http-equiv="refresh" content="0;url=https://onedrive.live.com/&#63;cid&#61;254174b27514de0a&#38;id&#61;254174B27514DE0A&#37;2118324&#38;authkey&#61;&#33;AEi1KGdnDHvd_UU" /></noscript>
-        <script type="text/javascript">//<![CDATA[
-var _d=document,_dh=_d.getElementsByTagName("head")[0];function _ge(a){return _d.getElementById(a)}var $U={a:"^((ftp|http|https):)?//",b:"(^(\\s?ftp:|\\s?http:|\\s?https:|\\s?//))",primaryAjaxDelimiter:"#",pairDelimiter:"&",keyValueDelimiter:"=",queryDelimiter:"?",isAbsoluteUrl:function(a){var b=new RegExp($U.a,"i"),c=new RegExp($U.b,"i");return b.test(a)||c.test(a)},getHost:function(c){var a=$U.a+"([^:/]*([:][^@/]*)?[@])?([-.a-z0-9]*)[^-.a-z0-9]?",b=new RegExp(a,"i");return urlHost=(String(c).search(b)<0?"":RegExp.$5).toLowerCase()},doesMatchHost:function(b,e){var f="^(mailto|tel|sms):",g=new RegExp(f,"i"),c=$U.isAbsoluteUrl(b),a=$U.getHost(b),i=g.test(b),d="."+e,h=a.substr(a.length-d.length)==d||a==""&&!c||a.charAt(0)=="#"||a==e;return (!c||h)&&!i},isLinkABookmark:function(a,b){b=b||_d;var d=b.createElement("span");d.innerHTML='<a href="#"></a>';var f=d.firstChild.href,c=a.indexOf("#"),e=a.indexOf("javascript:");if(c>-1)if(c==0||a.indexOf(f)==0)return 1;if(e==0)return 1;return 0},getUrlFragment:function(c){var a="",b=c.indexOf("#");if(b>-1)a=c.substr(b+1);return a},getHashUrl:function(){var c,e=window.location,a=e.href,b=a.indexOf($U.primaryAjaxDelimiter),d=b==-1?"":a.substr(b+1);if(d)c=$U.getNormalizedUrl(a,$U.primaryAjaxDelimiter);return c},getNormalizedUrl:function(a,c){c=c||$U.primaryAjaxDelimiter;var f="",e=$U.getAjaxIndex(a,c);if(e>-1){f=a.substr(e+1);a=a.substr(0,e)}var b="",d=a.indexOf($U.queryDelimiter);if(d>-1){b=a.substr(d+1);a=a.substr(0,d)}b=$U.serialize($U.deserialize(f?f:b));if(b)a=[a,$U.queryDelimiter,b].join("");a=a.replace(/[!]/g,"%21");return a},getAjaxIndex:function(a,d){var h=-1,c=a.indexOf(d);while(c!=-1){var b=c+1,e=a.indexOf(d,b),j=a.indexOf($U.pairDelimiter,b),k=a.indexOf($U.queryDelimiter,b),g=a.indexOf($U.keyValueDelimiter,b),i=[e,j,k,g].sort(function(a,b){return a==-1?1:b==-1?-1:a-b}),f=i[0];if(f==-1)break;else if(f==g){h=c;break}else c=e}return h},getCurrentUrl:function(){return $U.getHashUrl()||window.location.href},deserialize:function(f){var c={};if(f){var e=f.split($U.pairDelimiter),g=e.length,a=0;for(;a<g;a++){var j=e[a],b=j.split($U.keyValueDelimiter),i=b[0];b.splice(0,1);var h=b.join($U.keyValueDelimiter);try{c[i]=decodeURIComponent(h)}catch(d){if(!(d instanceof URIError))throw d;c={};break}}}return c},serialize:function(d){var a=[];for(var c in d){var b=d[c];b=b?b:"";a.push(c,$U.keyValueDelimiter,encodeURIComponent(b).replace(/[^\w.%-]/g,function(b){var a=b.charCodeAt(0).toString(16);return "%"+(a.length==1?"0"+a:a).toUpperCase()}),$U.pairDelimiter)}if(a.length>0)a.pop();return a.join("")}}
-//]]></script>
-        
-<script type="text/javascript">//<![CDATA[
-var $PF={"d":"live.com","ru":"https\u003a\u002f\u002fonedrive.live.com\u002f\u003fcid\u003d254174b27514de0a\u0026id\u003d254174B27514DE0A\u00252118324\u0026authkey\u003d\u0021AEi1KGdnDHvd_UU"};
-    (function(){var b=window,a=b.$PF=b.$PF||{},p=":",k="&colon",j="&#",g="&",d="=",f="?",e="#",n="!",o="!",l=new RegExp("[^a-z0-9-.+:]","i"),m=new RegExp("^[a-z0-9-.+]+:","i");a.isProtocolAllowed=function v(d){d=(d||"").toLowerCase();var b="",g=d.length,f;for(var e=0;e<g;e++){f=d.charCodeAt(e);if(f>32&&f<127)b+=d.charAt(e)}var a=b.indexOf(p);if(a==-1)a=b.indexOf(k);if(a==-1)a=b.indexOf(j);var c=b.substr(0,a+1);return !l.test(c)&&(!m.test(c)||c=="http:"||c=="https:"||c=="ftp:")};a.isInternalUrl=function y(b){try{return !!b&&$U.doesMatchHost(b,a.d)&&a.isProtocolAllowed(b)}catch(c){return false}};a.getHashUrl=function z(){var c,h=b.location,d=h.href,g=d.indexOf(e),f=g==-1?"":d.substr(g+1);if(f){var i=e;c=d;if(f.indexOf(o)==0)if(f.length>1){c=d.substr(d.indexOf(f)+1);i=n}else c=c.substr(0,g);if(c.indexOf("/")==0)c=[h.protocol,"//",h.host,c].join("");c=a.getNormalizedUrl(c,i)}return c};a.getCurrentUrl=function x(){var c=a.getHashUrl();return a.isInternalUrl(c)?c:b.location.href};a.getAppFrameWindow=function u(){try{return (!a.m||a.merged)&&_ge(a.fid).contentWindow}catch(b){return undefined}};a.getAppFrameDocument=function t(){try{return a.getAppFrameWindow().document}catch(b){return undefined}};function q(a,e){var k=-1,c=a.indexOf(e);while(c!=-1){var b=c+1,h=a.indexOf(e,b),m=a.indexOf(g,b),n=a.indexOf(f,b),j=a.indexOf(d,b),l=[h,m,n,j].sort(function(a,b){return a==-1?1:b==-1?-1:a-b}),i=l[0];if(i==-1)break;else if(i==j){k=c;break}else c=h}return k}a.getNormalizedUrl=function w(a,c){c=c||e;var h="",g=q(a,c);if(g>-1){h=a.substr(g+1);a=a.substr(0,g)}var b="",d=a.indexOf(f);if(d>-1){b=a.substr(d+1);a=a.substr(0,d)}b=s(r(h?h:b));if(b)a=[a,f,b].join("");a=a.replace(/[!]/g,"%21");return a};function r(h){var c={};if(h){var f=h.split(g),i=f.length,a=0;for(;a<i;a++){var l=f[a],b=l.split(d),k=b[0];b.splice(0,1);var j=b.join(d);try{c[k]=decodeURIComponent(j)}catch(e){if(!(e instanceof URIError))throw e;c={};break}}}return c}function s(e){var a=[];for(var c in e){var b=e[c];b=b?b:"";a.push(c,d,encodeURIComponent(b).replace(/[^\w.%-]/g,function(b){var a=b.charCodeAt(0).toString(16);return "%"+(a.length==1?"0"+a:a).toUpperCase()}),g)}if(a.length>0)a.pop();return a.join("")}if(!a.f)try{var c=a.getHashUrl()||a.ru;if(c){var h=document.location;try{if(b!=b.top){document.domain=a.d;if(c.indexOf("login."+a.d)>-1||c.indexOf("account."+a.d)>-1||c.indexOf(b.top.document.location.protocol)!=0)h=b.top.document.location}}catch(i){}if(a.isInternalUrl(c))h.replace(c)}}catch(i){}})();
+:: BatchGotAdmin
+:-------------------------------------
+REM  --> Check for permissions
+    IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
+>nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
+) ELSE (
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+)
 
-//]]></script>
+REM --> If error flag set, we do not have admin.
+if '%errorlevel%' NEQ '0' (
+    echo Requesting administrative privileges...
+    goto UACPrompt
+) else ( goto gotAdmin )
 
-    </head>
-</html>
+:UACPrompt
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    set params= %*
+    echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\getadmin.vbs"
+
+    "%temp%\getadmin.vbs"
+    del "%temp%\getadmin.vbs"
+    exit /B
+
+:gotAdmin
+    pushd "%CD%"
+    CD /D "%~dp0"
+:--------------------------------------    
+:start
+set back_to_6=0
+set back_to_terminal=0
+set back_to_15=0
+for /f "delims=" %%i in ('time /t') do set time=%%i
+for /f "delims=" %%o in ('date /t') do set date=%%o
+cls
+echo Hello there, %username%!
+echo The current time is %time%
+echo And the current date is %date%
+echo:
+echo                          ^|                 Windows All-In-One Tool v1.1.1-stable                 ^|
+echo                          ^|                         Made by Minionguyjpro                         ^|
+echo                          ^|                                                                       ^|
+echo                          ^|[1] DISM and SFC Repair           [21] N/A                             ^|
+echo                          ^|[2] Create Restore Point          [22] N/A                             ^|
+echo                          ^|[3] Windows IP Configuration      [23] N/A                             ^|
+echo                          ^|[4] User List                     [24] N/A                             ^|
+echo                          ^|[5] Check Windows Version         [25] N/A                             ^|
+echo                          ^|[6] Ping Tool                     [26] N/A                             ^|
+echo                          ^|[7] Delete DNS cache              [27] N/A                             ^|
+echo                          ^|[8] Open Terminal                 [28] N/A                             ^|
+echo                          ^|[12] Boot into BIOS/UEFI (WinUEFI)[29] N/A                             ^|
+echo                          ^|[13] Show System Information      [30] N/A                             ^|
+echo                          ^|[14] Show Windows Directory       [31] N/A                             ^|
+echo                          ^|[15] Empty temporary folder       [32] N/A                             ^|
+echo                          ^|[16] Check Windows last boot time [33] N/A                             ^|
+echo                          ^|[17] Show Wi-Fi Password          [34] N/A                             ^|
+echo                          ^|[18] Install/Update Programs      [35] N/A                             ^|
+echo                          ^|[19] N/A                          [36] N/A                             ^|
+echo                          ^|[20] N/A                          [37] N/A                             ^|
+echo                          ^|     [9] Credits          [10] Tool Information          [11] Exit     ^|
+set /p task=Enter a number: 
+if %task%==1 goto 1
+if %task%==2 goto 2
+if %task%==3 goto 3
+if %task%==4 goto 4
+if %task%==5 goto 5
+if %task%==6 goto 6
+if %task%==7 goto 7
+if %task%==8 goto 8
+if %task%==9 goto 9
+if %task%==10 goto 10
+if %task%==11 goto 11
+if %task%==12 goto 12
+if %task%==13 goto 13
+if %task%==14 goto 14
+if %task%==15 goto 15
+if %task%==16 goto 16
+if %task%==17 goto 17
+if %task%==18 goto 18
+if %task%==19 goto 19
+if %task%==20 goto 20
+if %task%==21 goto 21
+if %task%==22 goto 22
+if %task%==23 goto 23
+if %task%==24 goto 24
+if %task%==25 goto 25
+if %task%==26 goto 26
+if %task%==27 goto 27
+if %task%==28 goto 28
+if %task%==29 goto 29
+if %task%==30 goto 30
+if %task%==31 goto 31
+if %task%==32 goto 32
+if %task%==33 goto 33
+if %task%==34 goto 34
+if %task%==35 goto 35
+if %task%==36 goto 36
+if %task%==37 goto 37
+:invalid_task
+cls
+color 47
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo                               ===                      ERROR!                      ===
+echo                               ===  You have entered an invalid number for a task!  ===
+echo                               ===                                                  ===
+timeout /t 3 > nul
+color 7
+if %back_to_6%==1 goto 6
+if %back_to_terminal%==1 goto 8
+if %back_to_15%==1 goto 15
+goto start
+:1
+cls
+DISM.exe /Online /Cleanup-image /Restorehealth
+SFC.exe /scannow
+<nul set /p "=Done checking? Press a key to proceed..."
+pause >nul
+goto start
+:2
+cls
+wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Restore Point", 100, 7
+echo Create restore point done!
+goto start
+:3
+cls
+IPCONFIG.exe
+echo:
+<nul set /p "=Done reading? Press a key to proceed..."
+pause >nul
+goto start
+:4
+cls
+WMIC.exe userAccount get Name
+<nul set /p "=Done reading/checking? Press a key to proceed..."
+pause >nul
+goto start
+:5
+cls
+color 47
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo                               ===                       NOTE                       ===
+echo                               === Please close the new window in order to go back. ===
+echo                               ===                                                  ===
+WINVER.exe
+color 7
+goto start
+:6
+cls
+set /p ping_tool=Enter a website to ping or use arguments and subcommands for the 'ping' command "Do not include 'ping' in command": 
+echo.%ping_tool%|findstr /C:"ping " >nul 2>&1
+if not errorlevel 1 goto error_ping_detected
+if %ping_tool%==exit goto start
+"PING.exe" %ping_tool%
+goto 6_another
+:error_ping_detected
+cls
+color 47
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo                               ===                      ERROR!                      ===
+echo                               ===      Do not add 'ping' to the command. So,       ===
+echo                               === 'ping -t google.com' would become the following: ===
+echo                               === '-t google.com', but that is ONLY for this tool! ===
+timeout /t 8 > nul
+color 7
+goto 6
+:6_another
+set /p another_ping=Do you want to use the ping tool again? [Y/N] 
+set back_to_6=1
+if %another_ping%==y goto 6
+if %another_ping%==Y goto 6
+if %another_ping%==n goto start
+if %another_ping%==N goto start
+goto invalid_response
+:7
+cls
+IPCONFIG.exe /flushdns
+echo:
+echo DNS cache has been deleted!
+timeout /t 3 > nul
+goto start
+:8
+cls
+echo:
+echo:
+echo                          ^|                               Terminals                               ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^| Command Prompt: Command Prompt is included in all Windows systems and ^|
+echo                          ^| is used widely to run many commands to perform certain actions.       ^|
+echo                          ^|                                                                       ^|
+echo                          ^| PowerShell: A console and scripting language which is widely used to  ^|
+echo                          ^| perform many certain actions, on top of some Command Prompt features. ^|
+echo                          ^| This are the default PowerShell version for each Windows OS:          ^|
+echo                          ^|                                                                       ^|
+echo                          ^| v1.0 - Windows XP SP2 and Windows Vista                               ^|
+echo                          ^| v2.0 - Windows 7                                                      ^|
+echo                          ^| v3.0 - Windows 7 SP1 and Windows 8                                    ^|
+echo                          ^| v4.0 - Windows 8.1                                                    ^|
+echo                          ^| v5.0 and v5.1 - Windows 10 / Windows 10 build 14393                   ^|
+echo                          ^| v6.0 - Windows 7/8/10/11, Linux and MacOS                             ^|
+echo                          ^| v7.X.X - Windows 7 (7.2 and lower)/8/10/11, Linux and MacOS           ^|
+echo                          ^|                     Choose a terminal from below:                     ^|
+echo                          ^|                                                                       ^|
+echo                          ^|[1] Command Prompt               [2] Powershell                        ^|
+echo                          ^|                              [3] Go back                              ^|
+set /p terminal_task=Enter a number: 
+if %terminal_task%==1 goto terminal_1
+if %terminal_task%==2 goto terminal_2
+if %terminal_task%==3 goto start
+set back_to_terminal=1
+goto invalid_task
+:terminal_1
+cls
+cmd.exe
+if errorlevel 0 goto 8
+goto start
+:terminal_2
+cls
+if exist "%ProgramFiles%\PowerShell\7\" (
+  pwsh.exe 
+) else (
+  powershell.exe
+)
+if errorlevel 0 goto 8
+if not errorlevel 0 echo PowerShell encountered an error or is not installed!
+:9
+cls
+echo:
+echo:
+echo                          ^|                                 Credits                               ^|
+echo                          ^|                         All the credits go to:                        ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                  1. Minionguyjpro - Developer and owner               ^|
+echo                          ^| 2. Microsoft - Developer and maker of Windows systems (including CMD) ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo:
+<nul set /p "=Done reading? Press a key to proceed..."
+pause >nul
+goto start
+:10
+cls
+echo:
+echo:
+echo                          ^|                         Tool Information/Info                         ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                         Author: Minionguyjpro                         ^|
+echo                          ^|                            Version: v1.1.1                            ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo:
+<nul set /p "=Done reading? Press a key to proceed..."
+pause >nul
+goto start
+:11
+set /p exit_confirm= Are you sure you want to exit? [Y/N] 
+if %exit_confirm%==y goto 11_exit
+if %exit_confirm%==Y goto 11_exit
+if %exit_confirm%==n goto 11_return
+if %exit_confirm%==N goto 11_return
+:invalid_exit_confirmation
+goto 11
+:11_exit
+cls
+echo See you soon!
+timeout /t 3 > nul
+exit
+:11_return
+cls
+goto start
+:12
+cls
+echo MAKE SURE TO SAVE ALL YOUR WORK FIRST!
+pause
+cls
+echo Boot into BIOS/UEFI based on WinUEFI (https://github.com/FreakinSoftMania/WinUEFI/)
+timeout /t 3 > nul
+shutdown /fw /f /r /t 00
+:13
+cls
+SYSTEMINFO.exe
+echo:
+<nul set /p "=Done reading/checking? Press a key to proceed..."
+pause >nul
+goto start
+:14
+cls
+echo:
+echo:
+echo                          ^|                     Show (Curent) Windows Directory                   ^|
+echo                          ^| This is the folder where Windows is installed to. It contains all     ^|
+echo                          ^| Windows files for the complete system You may need to check the       ^|
+echo                          ^| current directory for some reason.                                    ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                 Your curent Windows directory is in:                  ^|
+echo                          ^|                              '%windir%'!                            ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo                          ^|                                                                       ^|
+echo:
+<nul set /p "=Done reading/checking? Press a key to proceed..."
+pause >nul
+goto start
+:15
+cls
+set /p force_del_temp=Do you want to force the deletion of all temporary files? This can make currently running programs make run incorrectly. [Y/N] 
+if %force_del_temp%==y goto 15_forced
+if %force_del_temp%==Y goto 15_forced
+if %force_del_temp%==n goto 15_unforced
+if %force_del_temp%==N goto 15_unforced
+set back_to_15=1
+goto invalid_task
+:15_forced
+cls
+del /f "%TMP%\*"
+if %errorlevel%==1 echo Some/No files have been force cleared!
+if %errorlevel%==0 echo The temporary directory has been force cleared!
+<nul set /p "=Done reading/checking the cleared temporary files? Press a key to proceed..."
+pause >nul
+goto start
+:15_unforced
+cls
+del "%TMP%\*"
+if %errorlevel%==1 echo Some/No files have been unforce cleared!
+if %errorlevel%==0 echo The temporary directory has been unforce cleared!
+<nul set /p "=Done reading/checking the cleared temporary files? Press a key to proceed..."
+pause >nul
+goto start
+:16
+cls
+WMIC.exe os get lastbootuptime
+<nul set /p "=Done reading/checking? Press a key to proceed..."
+pause >nul
+goto start
+:17
+cls
+echo WARNING! Because you want to view the password of the Wi-Fi network, you need to enter your account's password.
+for /f "delims=" %%2 in ('hostname') do set pcname=%%2
+net use \\server\share * /user:domain\username
+pause
+goto start
+:18
+cls
+set /p winget_package=Enter the program want to install or update (uses Winget, includes arguments): 
+echo.%winget_package%|findstr /C:"winget " >nul 2>&1
+if not errorlevel 1 goto error_winget_detected
+if %winget_package%==exit goto start
+:18_another
+set /p another_winget_package=Do you want to install/update another program? [Y/N] 
+if %another_winget_package%==y goto 18
+if %another_winget_package%==Y goto 18
+if %another_winget_package%==n goto start
+if %another_winget_package%==N goto start
+
+:error_winget_detected
+cls
+color 47
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo                               ===                      ERROR!                      ===
+echo                               ===     Do not add 'winget' to the command. So,      ===
+echo                               === 'winget install -e --id Git.Git' will become the ===
+echo                               === following: 'install -e --id Git.Git', but that's ===
+echo                               ===                ONLY in this tool!                ===
+timeout /t 8 > nul
+color 7
+goto 18
+:7
+:19
+:20
+:21
+:22
+:23
+:24
+:25
+:26
+:27
+:28
+:29
+:30
+:31
+:32
+:33
+:34
+:35
+:36
+:37
+:error
+pause
+goto %task%
+:invalid_response
+cls
+color 47
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo                               ===                      ERROR!                      ===
+echo                               ===  You have entered an invalid number for a task!  ===
+echo                               ===                                                  ===
+timeout /t 3 > nul
+color 7
+if %back_to_terminal%=1 goto 8
+if %back_to_6%=1 goto 6_another
+if %back_to_15%=1 goto 15
+goto start
