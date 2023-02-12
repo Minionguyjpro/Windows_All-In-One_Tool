@@ -6,7 +6,7 @@ on:
  workflow_dispatch:
 jobs:
  sync:
-  runs-on: ubuntu-latest
+  runs-on: windows-latest
   steps:
   - uses: actions/checkout@v3
   
