@@ -10,8 +10,13 @@ jobs:
   steps:
   - uses: actions/checkout@v3
   
-  - name: Download a file
-    uses: valitydev/action-download-file@v1.0.6
-    with:
-     url: ${{ secrets.onedrive_url }}
-     target-path: src/
+  - name: Download the file
+    run: Invoke-WebRequest -Uri "${{ secrets.onedrive_url }}" -OutFile "src\Windows_All-In-One_Tool.bat"
+
+  - name: Push changes with Git
+    run: |
+      git config --global user.name "${{ secrets.git_username }}"
+      git config --global user.email "${{ secrets.git_email }}"
+      git add .
+      git commit -am "Auto-sync Windows_All-In-One_Tool.bat"
+      git push origin ${{ github.ref_name }}
