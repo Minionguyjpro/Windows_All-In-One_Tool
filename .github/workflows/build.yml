@@ -76,7 +76,7 @@ jobs:
           cert-password: '${{ secrets.PASSWORD }}'
           cert-sha1: '${{ secrets.CERTHASH }}'
           cert-description: 'N/A'
-          folder: 'src/'
+          folder: 'build/'
           recursive: true
           timestamp-server: 'http://timestamp.digicert.com'
 
