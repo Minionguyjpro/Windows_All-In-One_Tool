@@ -20,12 +20,14 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  dev_domain: '${{ secrets.dev_domain }}'
 jobs:
   # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
-      url: ${{ secrets.dev_domain }}
+      url: '${{ env.dev_domain }}'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
