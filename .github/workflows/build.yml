@@ -37,7 +37,7 @@ jobs:
       # Converts the batch file into an executable program for Windows
       - name: Build BAT to EXE application
         run: |
-          "%REPO_PATH%\Bat.exe" /bat "%REPO_PATH%\src\Windows All-In-One Tool.bat" /exe "%REPO_PATH%\src\Windows All-In-One Tool.exe" /icon "%REPO_PATH%\src\logo.ico" /uac-admin /productversion "${{ env.RELEASE_VERSION }}" /internalname "Windows All-In-One Tool"
+          "%REPO_PATH%\Bat.exe" /bat "%REPO_PATH%\src\Windows All-In-One Tool.bat" /exe "%REPO_PATH%\src\Windows_All-In-One_Tool.exe" /icon "%REPO_PATH%\src\logo.ico" /uac-admin /productversion "${{ env.RELEASE_VERSION }}" /internalname "Windows All-In-One Tool"
         shell: cmd
 
       - uses: GabrielAcostaEngler/signtool-code-sign@main
@@ -53,7 +53,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
          name: Windows All-In-One Tool
-         path: "src/Windows All-In-One Tool.exe"
+         path: "src/Windows_All-In-One_Tool.exe"
  
   build_installer:
    needs: build_exe
