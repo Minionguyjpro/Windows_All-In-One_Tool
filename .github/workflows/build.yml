@@ -18,6 +18,14 @@ env:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  upload_batch:
+    runs-on: windows-latest
+    steps:
+      - name: Upload batch file
+        uses: actions/upload-artifact@v3
+        with:
+          name: Windows All-In-One Tool
+          path: "src/Windows_All-In-One_Tool.bat"
   # This workflow contains a single job called "build"
   build_exe:
     # The type of runner that the job will run on
