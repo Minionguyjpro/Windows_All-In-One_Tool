@@ -4,7 +4,7 @@
 #define MyAppName "Windows All-In-One Tool"
 #define MyAppVersion "1.1.1"
 #define MyAppPublisher "Minionguyjpro"
-#define MyAppExeName "Windows All-In-One Tool.exe"
+#define MyAppExeName "Windows_All-In-One_Tool.exe"
 #define MyAppAssocName MyAppName + ""
 #define MyAppAssocExt ".exe"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
