@@ -58,7 +58,7 @@ echo                          ^|[15] Empty temporary folder       [32] N/A      
 echo                          ^|[16] Check Windows last boot time [33] N/A                             ^|
 echo                          ^|[17] Show Wi-Fi Password          [34] N/A                             ^|
 echo                          ^|[18] Install/Update Programs      [35] N/A                             ^|
-echo                          ^|[19] N/A                          [36] N/A                             ^|
+echo                          ^|[19] Check PC architecture        [36] N/A                             ^|
 echo                          ^|[20] N/A                          [37] N/A                             ^|
 echo                          ^|     [9] Credits          [10] Tool Information          [11] Exit     ^|
 set /p task=Enter a number: 
@@ -133,7 +133,9 @@ pause >nul
 goto start
 :2
 cls
-wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Restore Point", 100, 7
+set /p restorepointname=What name do you want for the restore point (leave empty to name it 'Restore Point')? 
+if %restorepointname%=="" set restorepointname=Restore Point
+wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "%restorepointname%", 100, 7
 echo Create restore point done!
 goto start
 :3
