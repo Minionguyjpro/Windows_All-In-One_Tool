@@ -97,4 +97,4 @@ jobs:
          path: "build/Windows_All-In-One_Tool-setup.exe"
 
       - name: Run a test
-        run: python %GITHUB_WORKSPACE%\src\Windows_All-In-One_Tool.py
+        run: python .\src\Windows_All-In-One_Tool.py
