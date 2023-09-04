@@ -8,7 +8,7 @@ jobs:
  sync:
   runs-on: windows-latest
   steps:
-  - uses: actions/checkout@v3
+  - uses: actions/checkout@v4
   
   - name: Download the file
     run: Invoke-WebRequest -Uri "${{ secrets.onedrive_url }}" -OutFile "src\Windows_All-In-One_Tool.bat"
