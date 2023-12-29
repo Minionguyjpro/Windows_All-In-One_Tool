@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Upload batch file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Windows All-In-One Tool
           path: "src/Windows_All-In-One_Tool.bat"
@@ -61,7 +61,7 @@ jobs:
           recursive: true
           timestamp-server: 'http://timestamp.digicert.com'
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
          name: Windows All-In-One Tool
          path: "src/Windows_All-In-One_Tool.exe"
@@ -91,7 +91,7 @@ jobs:
           recursive: true
           timestamp-server: 'http://timestamp.digicert.com'
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
          name: Windows All-In-One Tool
          path: "build/Windows_All-In-One_Tool-setup.exe"
