@@ -1,4 +1,5 @@
 @echo off
+setlocal DisableDelayedExpansion
 title Windows All-In-One Tool by Minionguyjpro
 
 :: BatchGotAdmin
@@ -59,7 +60,7 @@ echo                          ^|[16] Check Windows last boot time [33] N/A      
 echo                          ^|[17] Show Wi-Fi Password          [34] N/A                             ^|
 echo                          ^|[18] Install/Update Programs      [35] N/A                             ^|
 echo                          ^|[19] Check PC architecture        [36] N/A                             ^|
-echo                          ^|[20] N/A                          [37] N/A                             ^|
+echo                          ^|[20] Fix network issues           [37] N/A                             ^|
 echo                          ^|     [9] Credits          [10] Tool Information          [11] Exit     ^|
 set /p task=Enter a number: 
 if %task%==1 goto 1
@@ -461,7 +462,18 @@ color 7
 goto 18
 :7
 :19
+cls
+echo Your PC architecture is %PROCESSOR_ARCHITECTURE%!
+pause
+goto start
 :20
+cls
+echo We are going to try fixing your network issues!
+netsh winsock reset
+ipconfig /flushdns
+<nul set /p "=You shall restart your computer to (possibly) fix the network issues!"
+pause >nul
+goto start
 :21
 :22
 :23
