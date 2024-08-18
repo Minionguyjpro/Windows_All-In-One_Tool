@@ -24,7 +24,7 @@ jobs:
         -H 'Authorization: bearer ${{ secrets.authtoken }}' \
         -H 'Connection: keep-alive' \
         -H 'TE: trailers' \
-        -o src \
+        --output-dir src \
         -O
 
   - name: Push changes with Git
