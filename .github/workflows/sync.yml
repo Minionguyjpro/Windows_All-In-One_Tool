@@ -12,7 +12,7 @@ jobs:
 
   - name: Download the file
     run: |
-      curl -L "${{ secrets.onedrive_url }}" \
+      curl -L '${{ secrets.onedrive_url }}' \
         -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0' \
         -H 'Accept: application/json' \
         -H 'Accept-Language: nl-nl' \
