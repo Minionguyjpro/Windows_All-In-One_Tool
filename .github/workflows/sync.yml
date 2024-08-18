@@ -25,7 +25,6 @@ jobs:
       -H 'Connection: keep-alive' \
       -H 'TE: trailers'
 
-
   - name: Push changes with Git
     run: |
       git config --global user.name "github-actions[bot]"
