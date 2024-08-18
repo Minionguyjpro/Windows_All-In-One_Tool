@@ -25,7 +25,7 @@ jobs:
         -H 'Connection: keep-alive' \
         -H 'TE: trailers' \
         --output-dir src \
-        -O
+        -o Windows_All-In-One_Tool.bat
 
   - name: Push changes with Git
     run: |
