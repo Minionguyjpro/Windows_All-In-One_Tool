@@ -26,6 +26,7 @@ jobs:
         -H 'TE: trailers' \
         --output-dir src \
         -o Windows_All-In-One_Tool.bat
+    continue-on-error: true
 
   - name: Push changes with Git
     run: |
